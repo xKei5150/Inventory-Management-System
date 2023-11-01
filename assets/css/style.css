@@ -1,0 +1,145 @@
+/*Custom*/
+body {
+	background-image: url("../../images/schoolbg.jpg");
+	background-size: 120% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+.alert-info {
+	background-image: none;
+	background-color: maroon;
+	border-color: maroon;
+	color: white;
+}
+.headerBanner {
+	background-color: white;
+	border-color: white;
+}
+
+.panel-primary>.panel-heading {
+	background-image: none;
+	background-color: maroon;
+	border-color: maroon;
+}
+.panel {
+	border-color: maroon;
+}
+
+a{
+	color: #bd1212
+}
+
+a:hover, a:focus{
+	color: maroon;
+}
+
+.btn-primary {
+	background-image: none;
+	background-color: #8c1010;
+	border-color: #8c1010;
+}
+
+.btn-primary:hover {
+	background-color: maroon;
+	border-color: maroon;
+}
+
+.navbar-custom {
+	margin-top: 1em;
+	background-color: #ffffff;
+
+}
+.navbar-inverse .navbar-nav>li>a{
+	color: maroon;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+	background-color: maroon;
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.active>a {
+	background-image: none;
+	background-color: maroon;
+	border-color: maroon;
+}
+/*Custom*/
+
+#container {
+	background: transparent;
+	font-size: 1.2em;
+	margin: 0 auto;
+	width: 900px;
+	margin-top: 60px;
+	
+}
+#right_content{
+	margin: 0 auto;
+	width: 85%;
+	height: 500px;
+}
+
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+	background-color: maroon;
+	border-color: maroon;
+}
+
+#left_content{
+	float: left;
+	width: 260px;
+	height: 200px;
+
+}#left_content ul {
+	display: block;
+	list-style: none;
+	font-size: 12px;
+}
+.input-profile-1{
+	width: 	250px;
+	padding: 2px 0;
+	text-align: center;	
+	border-radius: 5px;
+	margin-top: -10px;
+	font-family: arial;
+
+}.input-profile-2{
+	width: 	120px;
+	padding: 2px 0;
+	text-align: center;	
+	border-radius: 5px;
+	margin-top: -10px;
+	font-family: arial;
+
+}.input-profile-3{
+	width: 	150px;
+	padding: 2px 0;
+	text-align: center;	
+	border-radius: 5px;
+	margin-top: -6px;
+	font-family: arial;
+
+}.search-emp-eq{
+	float: 	right;	
+	border-radius: 	5px;
+	text-align: 	center;	
+	position: 	absolute;	
+}.login-form{
+
+	width: 50%;
+	height: 250px;
+	background-color: lime;
+	margin-top: 200px;
+	margin-left:300px;
+	border-radius: 10px; 
+
+}.login-content{
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 40%;
+	height: auto;
+	position: absolute;
+}.pannel-content{
+	width: 100%;
+	height: 450px;
+
+}
