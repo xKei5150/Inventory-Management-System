@@ -979,7 +979,7 @@ function item_profile_by_serial(serialNumber) {
 			$('.item-model').val(event.item_modno);
 			$('.item-amount').val(Number(event.item_amount).toLocaleString('en'));
 			$('.item-purchased').val(event.item_purdate);
-			$('.item-owner').val(event.emp_fname+' '+event.emp_mname+' '+event.emp_lname);
+			$('.item-owner').val(event.item_owner);
 			$('.item-category').val(event.cat_desc);
 			$('.item-condition').val(event.con_desc);
 		},

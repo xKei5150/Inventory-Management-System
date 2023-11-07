@@ -6,9 +6,11 @@ if(isset($_GET['choice'])){
     $choice = $_GET['choice'];
 
     $reports = $item->item_report($choice);
-    // echo '<pre>';
-    //  print_r($reports);
-    // echo '</pre>';
+//     echo '<pre>';
+//      print_r($reports);
+//     echo '</pre>';
+
+
 
 ?>
 <head>
@@ -42,6 +44,7 @@ if(isset($_GET['choice'])){
        <table id="myTable-report" class="table table-bordered table-hover" cellspacing="0" width="100%">
     <thead>
         <tr>
+            <th>Qr Code</th>
             <th>Item Name</th>
             <th>Owner</th>
             <th>Office</th>
@@ -50,7 +53,8 @@ if(isset($_GET['choice'])){
         </tr>
     </thead>
     <tbody>
-        <?php foreach($reports as $r): 
+        <?php foreach($reports as $r):
+            $qrPath = $item->getQRPath($r['item_serno']);
             $fN = $r['emp_fname'];
             $mN = $r['emp_mname'];
             $lN = $r['emp_lname'];
@@ -59,11 +63,17 @@ if(isset($_GET['choice'])){
             $fullName = ucwords($fullName);
         ?>
             <tr>
+                        <td>
+                            <?php if($qrPath): ?>
+                                <img src="qr_code_image.php?serial=<?= urlencode($r['item_serno']) ?>" alt="QR Code" width="100" height="100" />
+                            <?php endif; ?>
+                        </td>
                 <td><?= $r['item_name']; ?></td>
                 <td><?= $fullName; ?></td>
                 <td><?= $r['off_desc']; ?></td>
                 <td><?= $r['cat_desc']; ?></td>
                 <td><?= $r['con_desc']; ?></td>
+
             </tr>
         <?php endforeach; ?>
     </tbody>
